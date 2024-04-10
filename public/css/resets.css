@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+button,
+select,
+input {
+    cursor: pointer;
+}
+
+a:active,
+a:hover,
+a {
+    text-decoration: none;
+    color: #00000099;
+}
+
+li {
+    list-style-type: none;
+}
+
+select,
+select:focus,
+select:active,
+option,
+option:focus,
+option:active {
+    outline: none;
+}

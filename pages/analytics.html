@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics page</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <section class="card">
+                <div class="card__header">
+                    <div class="card__part">
+                        <img src="./assets/icons/card_pic.png" alt="" />
+                        <div class="card__name">
+                            <p>pH-метр Mettler-Toledo International, Inc. SevenCompact S220</p>  
+                            <span>S1.4.I14-9.001 · 00-024004</span>
+                        </div>
+                    </div>
+                    <div class="card__part">
+                        <select class="card__select" name="" id="">
+                            <option value="">В работе</option>
+                        </select>
+                        <input
+                            type="image"
+                            src="./assets/icons/Like.png"
+                        ></input>
+                        <input
+                            type="image"
+                            src="./assets/icons/Settings.png"
+                        ></input>
+                    </div>
+                </div>
+                <div class="card__wrapper">
+                    <div class="card__action">
+                        <select class="card__action_select" name="" id="">
+                            <option value="">Работа прибора</option>
+                        </select>
+                        <div class="save__btn_action">
+                            <input type="image" src="./assets/icons/alarm.png">
+                            <button class="card__btn_action"><span>Сохранить PDF</span></button>
+                        </div>
+                    </div>
+                    <div class="card__calendar">
+                        <div class="calendar">
+                            <input class="date" type="datetime-local" id="start" name="start" value="2021-10-07T10:55" min="2021-06-07T00:00" max="2013-06-14T00:00" />
+                            <img src="./assets/icons/arrow-right.png" alt="">
+                            <input class="date" type="datetime-local" id="end" name="end" value="2021-10-21T10:55" min="2021-06-07T00:00" max="2023-06-14T00:00" />
+                        </div>
+                        <div class="card__date_btns">
+                            <button>День</button>
+                            <button>Неделя</button>
+                            <button class="active__btn ">2 недели</button>
+                            <button>Месяц</button>
+                            <button>3 месяца</button>
+                            <button>Полгода</button>
+                        </div>
+                    </div>
+                    <div class="card__table">
+                        <table class="table">
+                            <tr>
+                                <th>Начало</th>
+                                <th>Тип работ</th>
+                                <th>Работы</th>
+                                <th>Результат</th>
+                                <th>Пользователь</th>
+                            </tr>
+                            <tr>
+                                <td>09.10.2021, 15:46</td>
+                                <td><span class="in_work">В работе</span> <p>Измерение</p></td>
+                                <td><span>Образец/серия:</span> 000100057935_170000010325_0000251849</td>
+                                <td >
+                                    <div class="result">
+                                        <span></span>
+                                        <img src="./assets/icons/check.png" alt=""></td>
+                                    </div>
+                                <td class="user">morozovava</td>
+                            </tr>
+                            <tr>
+                                <td>12.10.2021, 12:17</td>
+                                <td ><span class="in_work">В работе</span> <p>Калибровка</p></td>
+                                <td>
+                                    <p><span>Номер колонки:</span> Колонка 2</p>
+                                    <p><span>Образец:</span> Образец 2</p>
+                                    <p><span>Образец:</span> образец 1</p>
+                                    <p><span>Метод:</span> метов тестовый</p>
+                                    <p><span>Номер колонки:</span> Колонка 1</p>
+                                </td>
+                                <td>
+                                    <div class="result">
+                                        <span>Промывка с указанием вещества: Вещество</span>
+                                        <img src="./assets/icons/check.png" alt="">
+                                    </div>
+                                </td>
+                                <td class="user">morozovava</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+    </div>
+    <script src="./js/header.js"></script>
+</body>
+</html>

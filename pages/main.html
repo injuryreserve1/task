@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Main page</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="wrapper">
+                <section class="main">
+                    <form action="" class="search__bar" method="get">
+                        <input class="search" placeholder="Поиск прибора в Botanique по номеру, названию, подразделению и др.">
+                        <input  type="image" src="./assets/icons/qr_code.png">
+                    </form>
+                
+                    </input>
+                    <div class="content">
+                        <div class="content__name">
+                            <img src="./assets/icons/heart.png" alt="heart" />
+                            Любимые приборы
+                        </div>
+    
+                        <div class="content__main">
+                            <div class="content__header">
+                                <div class="content__item_name">Название</div>
+                                <div class="content__status">Статус</div>
+                            </div>
+                            <ul class="content__items"></ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script type="module" src="./js/MedDevices.js"></script>
+        <script src="./js/header.js"></script>
+    </body>
+</html>

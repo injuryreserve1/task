@@ -1,0 +1,346 @@
+@import './resets.css';
+@import './fonts.css';
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 16px;
+    color: #000000de;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1.25px;
+}
+
+.header {
+    height: 48px;
+    box-shadow: 0px 1px 1px 0px #0000000d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 300px;
+}
+
+.header__pages {
+    list-style-type: none;
+    display: flex;
+}
+
+.header__page {
+    padding: 16px 16px 14px;
+    font-family: inherit;
+    line-height: 16px;
+    letter-spacing: 1.25px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.active {
+    border-bottom: 2px solid rgba(35, 176, 74, 1);
+}
+
+.active a {
+    color: rgba(35, 176, 74, 1);
+}
+
+.container {
+    padding-top: 60px;
+    background-color: rgba(245, 245, 245);
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.search__bar {
+    background-color: rgba(245, 245, 245);
+    display: flex;
+    height: 56px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.search {
+    background-color: rgba(245, 245, 245);
+    color: rgba(0, 0, 0, 0.38);
+    font-family: inherit;
+    font-weight: 400;
+    letter-spacing: 0.15px;
+    height: 50px;
+    width: 100%;
+    outline: none;
+}
+
+.search:focus {
+    color: #000000de;
+}
+
+.content {
+    margin: 50px auto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.content__name {
+    width: 925px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.content__main {
+    width: 925px;
+    border: 1px solid #0000001f;
+    background: #ffffff;
+    font-size: 14px;
+    margin: 16px auto;
+}
+
+.content__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    font-weight: 500;
+}
+
+.content__status {
+    padding-right: 120px;
+}
+
+.content__item_name {
+    padding-left: 70px;
+}
+
+.content__item {
+    color: #000000de;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #21212114;
+    padding: 8px 12px;
+}
+
+.content__item:last-child {
+    border-bottom: 0px;
+}
+
+.content__part {
+    display: flex;
+    align-items: center;
+    color: #000000de;
+}
+
+.content__part img {
+    margin: 0px 10px;
+}
+
+select {
+    color: #00000099;
+    border: 1px solid #00000061;
+    border-radius: 3px;
+    padding: 5px;
+    padding-right: 20px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url('./../assets/icons/arrow_down.png') no-repeat right;
+}
+
+.card {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    height: 550px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px #00000024;
+}
+
+.card__wrapper {
+    margin: 0 20px;
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #21212114;
+}
+
+.card__part {
+    display: flex;
+    align-items: center;
+}
+
+.card__name {
+    max-width: 600px;
+    line-height: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+
+.card__name span {
+    font-size: 12px;
+    color: #00000099;
+}
+
+.card__select {
+    border: 1px solid #23b04a;
+    color: #23b04a;
+    margin-right: 8px;
+    font-weight: 400;
+}
+
+.card__action_select {
+    margin-left: 15px;
+    font-family: inherit;
+    font-weight: 400;
+    border: none;
+    color: #000000de;
+    font-size: 16px;
+}
+
+.card__action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0px;
+}
+
+.save__btn_action {
+    display: flex;
+    align-items: center;
+}
+
+.card__btn_action {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    background-color: white;
+    color: #23b04a;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 500;
+    padding: 7px 25px 7px 16px;
+    border: 1px solid #0000001f;
+    border-radius: 5px;
+}
+
+.card__btn_action:after {
+    position: relative;
+    top: 0;
+    left: 15px;
+    content: '\2807';
+    border-left: 1px solid #23b04a;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.save__btn_action input {
+    border: 1px solid #0000001f;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.calendar {
+    display: flex;
+    align-items: center;
+}
+
+.date {
+    margin: 10px 0px;
+    padding: 10px 32px 10px 8px;
+    border: 1px solid #0000001f;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.date::-webkit-calendar-picker-indicator {
+    position: relative;
+    top: 0;
+    left: 20px;
+}
+
+.card__date_btns button {
+    font-size: 14px;
+    color: #00000099;
+    font-family: inherit;
+    margin: 4px 0px;
+    padding: 0.5em 0.7em;
+    border-radius: 4em;
+}
+
+.active__btn {
+    background-color: #c2e7c8;
+}
+
+.table {
+    font-size: 14px;
+    border-collapse: collapse;
+    margin: 30px auto;
+    color: rgba(0, 0, 0, 0.38);
+}
+
+.table th {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+
+.table td {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    text-align: left;
+}
+
+.table th,
+td {
+    border-bottom: 1px solid rgba(33, 33, 33, 0.08);
+    padding: 10px;
+}
+
+.table span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.user {
+    color: rgba(46, 155, 194, 1);
+}
+
+.result {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+
+td .in_work {
+    color: rgba(35, 176, 74, 1);
+}
+th:nth-child(3) {
+    width: 490px;
+}
+
+th:nth-child(4) {
+    width: 150px;
+}
+
+.hidden {
+    display: none;
+}
